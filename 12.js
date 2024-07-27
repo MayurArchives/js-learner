@@ -1,3 +1,3 @@
-function sum(a,b=2){
-    return a+b;
+function sum(a,b=8){
+    return a-b;
 }
