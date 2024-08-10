@@ -6,4 +6,4 @@ const student= {
         console.log("marks=" ,this.marks);
         
     },
-},
+}

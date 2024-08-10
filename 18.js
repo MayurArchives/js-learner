@@ -1,7 +1,18 @@
-let newBtn = document.createElement("button");
-newBtn.innerText = "click me!";
+class toyotaCar {
+    constructor(brand){
+        console.log( "creating new object");
+        this.brand= brand;
 
-newBtn.style.background = "white";
-newBtn.style.background.color = "purple";
+    }
+start(){
+    console.log("start");
+    
+}
+stop(){
+    console.log("stop");
+    
+}
 
-document.querySelector("body").prepend(newBtn);
+}
+let thar = new toyotaCar("thar");
+let bmw = new toyotaCar("bmw");
