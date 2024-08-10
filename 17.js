@@ -1,6 +1,9 @@
-let div= document.querySelector("div");
-div.style.background = "green";
-div.style.backgroundColor = "blue";
-div.style.visibility ="hidden";
-div.style.fontSize = "26px";
-div.innerText = "Hello";
+const student= {
+    fullName: "Mayur Kanyal",
+    marks: 94,
+    age: 22,
+    printMarks : function(){
+        console.log("marks=" ,this.marks);
+        
+    },
+},
