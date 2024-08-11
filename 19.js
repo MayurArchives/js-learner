@@ -23,7 +23,7 @@ class Engineer extends person {
     work(){
         console.log("solve coding problems, build projects");
         console.log("Value of a from parent class: " + super.a);  
-    }
+    }   
 }
 
 let mayurObj = new Engineer();   
