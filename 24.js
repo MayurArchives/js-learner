@@ -5,6 +5,14 @@ const getFetchData = async () => {
     // console.log(res);
     let data = await res.json();
     console.log(data);
+    let fData = data.filter((obj) => {
+          
+        return obj.id >= 100 && obj.id < 150;
+    });
+
+    console.log(fData);
+
+
 }
 getFetchData();
 
