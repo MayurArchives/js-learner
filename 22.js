@@ -1,7 +1,7 @@
 const myPromise = new Promise((resolved, reject) => {
     let success = true;
     if (success) {
-        resolved("operation is successful");
+        resolved("operation  is successful: ");
     }
     else {
         reject("operation is failed");
