@@ -9,6 +9,13 @@ const getFetchData = async () => {
         let el = obj.id > 6 && obj.id < 8
         return el;
     });
-    console.log(fdata);
+    
+    let fname = data[6].name.split(" ");
+    console.log(fname);
+    let firstName = fname[0];
+    console.log(firstName);
+    
+    
+    
 };
 getFetchData();
