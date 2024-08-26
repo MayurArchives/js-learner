@@ -23,17 +23,17 @@
 
 
 // 4. Function with Return Value
-// function add(a,b) {
-//     return a+b;
+function add(a,b) {
+    return a+b;
 
-// }
-// let sum = add(2,6);
-// console.log(sum);
+}
+let sum = add(2,6);
+console.log(sum);
 
 
 // Arrow Function:
-const add = (a,b)=> a+b;
-console.log(add(2,3));
+// const add = (a,b)=> a+b;
+// console.log(add(2,3));
 
 
 // const multlipy = function(a, b){
