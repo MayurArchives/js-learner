@@ -32,15 +32,15 @@
 
 
 // Arrow Function:
-// const add = (a,b)=> a+b;
-// console.log(add(2,3));
+const add = (a,b)=> a+b;
+console.log(add(2,3));
 
 
-const multlipy = function(a, b){
-    return a * b;
+// const multlipy = function(a, b){
+//     return a * b;
 
-}
-console.log(multlipy(3,3));
+// }
+// console.log(multlipy(3,3));
 
 
 
