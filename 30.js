@@ -23,12 +23,6 @@
 
 
 // 4. Function with Return Value
-function add(a,b) {
-    return a+b;
-
-}
-let sum = add(2,6);
-console.log(sum);
 
 
 // Arrow Function:
@@ -41,6 +35,25 @@ console.log(sum);
 
 // }
 // console.log(multlipy(3,3));
+
+// higher-Order Functions
+// A higher-order function is a function that 
+// either takes another function as an argument
+//  or returns a function.
+function applyOperation(x,y,operation) {
+    return operation (x,y);
+}
+function add(a,b){
+return a+b;
+
+}
+ function multlipy(a,b){
+    return a*b ;
+ }
+ console.log(applyOperation(5,4,add));
+ console.log(applyOperation(5,5,multlipy));
+ 
+
 
 
 
