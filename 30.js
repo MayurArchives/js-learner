@@ -40,19 +40,33 @@
 // A higher-order function is a function that 
 // either takes another function as an argument
 //  or returns a function.
-function applyOperation(x,y,operation) {
-    return operation (x,y);
-}
-function add(a,b){
-return a+b;
+// function applyOperation(x,y,operation) {
+//     return operation (x,y);
+// }
+// function add(a,b){
+// return a+b;
 
-}
- function multlipy(a,b){
-    return a*b ;
- }
- console.log(applyOperation(5,4,add));
- console.log(applyOperation(5,5,multlipy));
+// }
+//  function multlipy(a,b){
+//     return a*b ;
+//  }
+//  console.log(applyOperation(5,4,add));
+//  console.log(applyOperation(5,5,multlipy));
  
+// challenge
+const users = [
+    { name: "John Doe", id: 1 },
+    { name: "Jane Doe", id: 2 },
+    { name: "Billy Doe", id: 3 },
+  ];
+const userList = document.getElementById('userList');
+users.map(user => {
+    const li = document.createElement('li');
+    li.textContent= user.name;
+    userList.appendChild(li);
+});
+
+
 
 
 
