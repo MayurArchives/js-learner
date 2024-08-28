@@ -60,10 +60,11 @@ const users = [
     { name: "Billy Doe", id: 3 },
   ];
 const userList = document.getElementById('userList');
-users.map(user => {
-    const li = document.createElement('li');
+users.map( (user) =>{
+    const li =document.createElement('li');
     li.textContent= user.name;
     userList.appendChild(li);
+    
 });
 
 
