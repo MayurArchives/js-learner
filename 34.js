@@ -5,7 +5,9 @@ function getRandomRGBColor(){
      return `rgb(${r}, ${g}, ${b})`;
 }
 function changeBackgroundColor(){
-    document.body.style.backgroundColor= getRandomRGBColor();
+    setInterval(() =>{
+        document.body.style.backgroundColor= getRandomRGBColor();
+    },1000);
 
 }
 const button = document.getElementById('colourButton');
