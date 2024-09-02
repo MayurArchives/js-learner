@@ -13,6 +13,9 @@ deleteBtn.className = 'deleteBtn';
 
 listItem.appendChild(deleteBtn);
 deleteBtn.onclick = () => listItem.remove();
+
+
+document.getElementById('todoList').appendChild(listItem);
 document.getElementById('todoInput').value = '';
 
 };

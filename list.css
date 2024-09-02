@@ -20,6 +20,18 @@ body{
 #addTodoBtn:hover {
     background-color: #218838;
 }
+.deleteBtn{
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.deleteBtn:hover {
+        background-color: darkred;
+}
 
 
 
