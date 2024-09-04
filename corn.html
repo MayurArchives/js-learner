@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Slider</title>
+    <script src="./36.js" defer></script>
 </head>
 <body>
-    <form>
-        <label for="inputText">Enter text:</label>
-        <input type="text" id="inputField" placeholder="Type something...">
-    </form>
-    <p id="displayText">the text will appeare here.</p>
-    
-    <script src="37.js"></script>
+    <label for="redSlider">Choose red slider</label>
+    <input onchange="handleChange()" type="range" id="redSlider" name="slider" min="0" max="255" value="255">
+    <br><br>
+    <label for="greenSlider">Choose green slider</label>
+    <input onchange="handleChange()" type="range" id="greenSlider" name="slider" min="0" max="255" value="255">
+    <br><br>
+    <label for="blueSlider">Choose blue slider</label>
+    <input onchange="handleChange()" type="range" id="blueSlider" name="slider" min="0" max="255" value="255">
+    <br><br>
+    <button id="btn" onclick="handleClick()">SUBMIT</button>
+
+
 </body>
 </html>
