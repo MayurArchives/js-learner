@@ -36,10 +36,16 @@ const handleChange = () => {
 }
 
 
-const handleClick = () => {
+// const handleClick = () => {
+//     let [r, g, b] = handleChange();
+//     console.log(r, g, b);
+//     body.style.background = `rgb(${r},${g},${b})`;
+// }
+btn.addEventListener("click", () => {
     let [r, g, b] = handleChange();
-    console.log(r, g, b);
-    body.style.background = `rgb(${r},${g},${b})`;
-}
+    body.style.background = `rgb(${r}, ${g}, ${b})`;
+});
+
+
 
 handleClick();
