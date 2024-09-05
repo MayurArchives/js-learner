@@ -30,7 +30,7 @@
 // });
 
 const myPromise = new Promise((resolve, reject) => {
-    let connection = true;
+    let connection = false;
     if (connection){
         resolve("connection is established")
     
@@ -40,8 +40,12 @@ const myPromise = new Promise((resolve, reject) => {
     }
 });
 
-myPromise.then(()=>{
-    console.log(myPromise);
+// myPromise.then(()=>{
+//     console.log(myPromise);
     
 
-});
+// });
+myPromise.catch(() => {
+    console.log(myPromise);
+    
+})
