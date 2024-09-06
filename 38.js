@@ -29,23 +29,38 @@
     
 // });
 
-const myPromise = new Promise((resolve, reject) => {
-    let connection = false;
-    if (connection){
-        resolve("connection is established")
+// const myPromise = new Promise((resolve, reject) => {
+//     let connection = false;
+//     if (connection){
+//         resolve("connection is established")
     
-    }
-    else {
-        reject("connection is not established")
-    }
-});
+//     }
+//     else {
+//         reject("connection is not established")
+//     }
+// });
 
 // myPromise.then(()=>{
 //     console.log(myPromise);
     
 
-// });
-myPromise.catch(() => {
-    console.log(myPromise);
+// // });
+// myPromise.catch(() => {
+//     console.log(myPromise);
     
-})
+// })
+
+function orderPizza(callback) {
+    console.log("pizza order kar dia ha ");
+
+    setTimeout(() => {
+        console.log("pizza deliver ho gya ha ");
+        callback();
+    },3000);  
+}
+function eatPizza(){
+    console.log("ab mai pizza kha raha hu");
+    
+    
+}
+orderPizza(eatPizza);
