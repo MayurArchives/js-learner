@@ -9,8 +9,8 @@
 // console.log(max);
 
 const words = ['JavaScript', 'is', 'awesome'];
-const sentence = words.reduce((accumulator, currentValue) => {
-    return accumulator + ' ' + currentValue;
+const sentence = words.reduce((accum, currVal) => {
+    return accum + ' ' + currval;
 });
 
 console.log(sentence); 
