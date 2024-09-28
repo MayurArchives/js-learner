@@ -21,15 +21,35 @@
 
 // how to remove element in array
 
-let myArray = [1, 2, 3, 4];
-let lastElement = myArray.pop();
-console.log(myArray);
-console.log(lastElement);
+// let myArray = [1, 2, 3, 4];
+// let lastElement = myArray.pop();
+// console.log(myArray);
+// console.log(lastElement);
 
 
 // let myArray = [1, 2, 3, 4, 5];
 // myArray.push(6, 7, 8, 9);
 // console.log(myArray);
+
+let myArray = [
+    { id: 1, name: "mayur", age: 22 },
+    { id: 2, name: "ash", age: 23 },
+    { id: 3, name: "mahi", age: 24 },
+
+
+];
+
+function createPerson(id, name, age) {
+    myArray.push({ id, name, age });
+
+}
+createPerson(4, "ujju", 22);
+console.log(myArray);
+
+
+
+
+
 
 
 
