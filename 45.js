@@ -58,21 +58,13 @@ let myArray = [
     { id: 3, name: "mahi", age: 24 },
 
 ];
-function updatePerson(id, newName, newAge) {
-    const person = myArray.find(p => p.id == id);
 
-    if (person) {
+function deletePerson(id) {
+    myArray = myArray.filter(p => p.id !== id);
 
-        person.name = newName;
-        person.age = newAge;
-    } else {
-        console.log("people not found");
-
-    }
 }
-updatePerson(2, "nick", 40);
+deletePerson(2);
 console.log(myArray);
-
 
 
 
