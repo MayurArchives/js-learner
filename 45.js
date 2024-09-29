@@ -31,20 +31,49 @@
 // myArray.push(6, 7, 8, 9);
 // console.log(myArray);
 
+// let myArray = [
+//     { id: 1, name: "mayur", age: 22 },
+//     { id: 2, name: "ash", age: 23 },
+//     { id: 3, name: "mahi", age: 24 },
+
+// ];
+// function createPeople(id, name, age) {
+//     myArray.push({ id, name, age });
+
+// }
+// createPeople(4, "ujju", 23);
+// console.log(myArray);
+
+// function readPep() {
+//     return myArray;
+
+
+
+// }
+// console.log(readPep);
+
 let myArray = [
     { id: 1, name: "mayur", age: 22 },
     { id: 2, name: "ash", age: 23 },
     { id: 3, name: "mahi", age: 24 },
 
-
 ];
+function updatePerson(id, newName, newAge) {
+    const person = myArray.find(p => p.id == id);
 
-function createPerson(id, name, age) {
-    myArray.push({ id, name, age });
+    if (person) {
 
+        person.name = newName;
+        person.age = newAge;
+    } else {
+        console.log("people not found");
+
+    }
 }
-createPerson(4, "ujju", 22);
+updatePerson(2, "nick", 40);
 console.log(myArray);
+
+
 
 
 
