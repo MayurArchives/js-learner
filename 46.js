@@ -10,8 +10,20 @@ let peopleObj = [
 // }
 // createPerson(4, "nick", 35)
 // console.log(peopleObj);
-function readPerson() {
-    return readPerson;
-}
-console.log(peopleObj);
+// function readPerson() {
+//     return readPerson;
+// }
+// console.log(peopleObj);
 
+function updatePerson(id, name, age) {
+    const person = peopleObj.find(p => p.id == id);
+    if (person) {
+        person.age = age;
+        person.name = name;
+    } else {
+        console.log("people not found");
+
+    }
+}
+updatePerson(3, "motu", 40);
+console.log(peopleObj);
