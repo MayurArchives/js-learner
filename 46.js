@@ -15,15 +15,21 @@ let peopleObj = [
 // }
 // console.log(peopleObj);
 
-function updatePerson(id, name, age) {
-    const person = peopleObj.find(p => p.id == id);
-    if (person) {
-        person.age = age;
-        person.name = name;
-    } else {
-        console.log("people not found");
+// function updatePerson(id, name, age) {
+//     const person = peopleObj.find(p => p.id == id);
+//     if (person) {
+//         person.age = age;
+//         person.name = name;
+//     } else {
+//         console.log("people not found");
 
-    }
+//     }
+// }
+// updatePerson(3, "motu", 40);
+// console.log(peopleObj);
+function deletePerson(id) {
+    peopleObj = peopleObj.filter(p => p.id !== id);
+
 }
-updatePerson(3, "motu", 40);
+deletePerson(2);
 console.log(peopleObj);
