@@ -27,13 +27,20 @@ class peopleMain {
 
 
     }
+    readPeople() {
+        return this.people;
+    }
 }
 const people = new peopleMain();
 people.createPerson(1, "nick", 20);
 people.createPerson(2, "ashiii", 201);
 people.createPerson(3, "ashpppp", 22);
-people.createPerson(4, "ashww", 23);
+people.createPerson(4, "as\\\\\\\\\\\\\\\\\\\\\\\\\hww", 23);
 console.log(people.people);
+
+
+console.log(peopleMain);
+
 
 
 
