@@ -1,2 +1,1 @@
-
-console.log(myArray);
+console.log(sum);
