@@ -21,7 +21,7 @@ const getFetchData = async () => {
     console.log(username.split("").reverse().join(""), username);
     let str = "";
     for (let i = username.length - 1; i >= 0; i--) {
-        str+=username[i];
+        str += username[i];
     }
     console.log(str);
 };

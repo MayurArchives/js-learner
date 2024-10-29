@@ -1,14 +1,18 @@
 const getFetchData = async () => {
-    console.log("getting data...");
+    console.log("gettin data...");
+
+
     let res = await fetch("https://jsonplaceholder.typicode.com/comments");
-    // console.log(res);
     let data = await res.json();
     console.log(data);
     let fData = data.filter((obj) => {
-        return obj.id >= 110 && obj.id < 170;
+        return obj.id >= 120 && obj.id < 180;
+
     });
     console.log(fData);
 
 }
 getFetchData();
+
+
 
