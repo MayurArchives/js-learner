@@ -1,1 +1,1 @@
-console.log(sum);
+console.log(person.cricket);
