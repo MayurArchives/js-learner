@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #alertBtn {
+            background: #007bff;
+            color: white;
+        }
+
+        #colorBtn {
+            background: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>What is JavaScript?</h1>
+        <p id="typewriter"></p>
+    </header>
+
+    <section class="content">
+        <h2>JavaScript makes websites interactive!</h2>
+        <button id="alertBtn">Click Me</button>
+        <button id="colorBtn">Change Background</button>
+    </section>
+
+    <script>
+        document.getElementById("alertBtn").addEventListener("click", function () {
+            alert("Hello! JavaScript makes websites interactive.");
+        });
+
+        document.getElementById("colorBtn").addEventListener("click", function () {
+            document.body.style.background = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        });
+
+        let text = "JavaScript is a powerful language!";
+        let index = 0;
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        typeWriter();
+    </script>
+
+</body>
+
+</html>
